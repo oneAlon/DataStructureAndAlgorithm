@@ -39,6 +39,11 @@
     
     NSArray *insertSortArray = [self insertSort:array];
     NSLog(@"插入排序:%@", insertSortArray);
+    
+    NSArray *quickSortArray = [self quickSort:array];
+    NSLog(@"快速排序:%@", quickSortArray);
+    
+    
 }
 
 /*
@@ -113,6 +118,62 @@
     }
     
     return [mutArray copy];
+}
+
+
+/**
+ 快速排序
+    对冒泡排序的一种改进,
+ */
+- (NSArray *)quickSort:(NSArray *)array {
+    return [self quicklySort:[array mutableCopy] left:0 right:((int)array.count - 1)];
+}
+
+- (NSArray *)quicklySort:(NSMutableArray *)array left:(int)left right:(int)right {
+    
+    if (left >= right) {
+        return array;
+    }
+    
+    int rightIndex = right;
+    
+    // 记录基准元素, 选取第一个为基准元素
+    int temp = [array[left] intValue];
+    
+    while (left < right) {
+        while (left < right && [array[right] intValue] >= temp) {
+            // 比基准元素大, 继续查找
+            right--;
+        }
+        // 比基准元素小, 赋值
+        array[left] = array[right];
+        
+        while (left < right && [array[left] intValue] <= temp) {
+            left++;
+        }
+        array[right] = array[left];
+    }
+    
+    // 基准元素归位
+    array[left] = [NSNumber numberWithInt:temp];
+    
+    // 递归
+    
+//     11,
+//     23,
+//     34,
+//     23,
+//     4,
+//     1,
+//     55,
+//     56,
+//     93,
+//     69
+    // left = 6;
+    [self quicklySort:array left:0 right:(left - 1)];
+    [self quicklySort:array left:(left + 1) right:rightIndex];
+    
+    return [array copy];
 }
 
 
