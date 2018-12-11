@@ -2,8 +2,8 @@
 //  ViewController.m
 //  DataStructureAndAlgorithm
 //
-//  Created by xygj on 2018/12/7.
-//  Copyright © 2018 xygj. All rights reserved.
+//  Created by OneAlon on 2018/12/7.
+//  Copyright © 2018 OneAlon. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -36,6 +36,9 @@
     
     NSArray *selectSortArray = [self selectSort:array];
     NSLog(@"选择排序:%@", selectSortArray);
+    
+    NSArray *insertSortArray = [self insertSort:array];
+    NSLog(@"插入排序:%@", insertSortArray);
 }
 
 /*
@@ -83,12 +86,30 @@
 
 /**
  插入排序
+    每一步将一个待排序的记录，插入到前面已经排好序的有序序列中去，直到插完所有元素为止。
  */
 - (NSArray *)insertSort:(NSArray *)array {
     NSMutableArray *mutArray = [array mutableCopy];
     int count = (int)mutArray.count;
     // 总复杂度: n的平方
-    for (int i = 0; i < count; i++) {// 复杂度n
+    for (int i = 0, j = 0; i < count; i++, j = 0) {// 复杂度n
+        int j = i; // 循环一次, 表示已排序的数组中增加一位
+        // 和已排序的数组中的值进行排序比较.
+        while (j > 0 && [mutArray[j - 1] intValue] > [mutArray[j] intValue]) {// 复杂度n
+            NSNumber *temp = mutArray[j - 1];
+            mutArray[j - 1] = mutArray[j];
+            mutArray[j] = temp;
+            j--;
+        }
+        
+//        while (j <= i) {
+//            if ([mutArray[j] intValue] > [mutArray[i] intValue]) {
+//                NSNumber *temp = mutArray[j];
+//                mutArray[j] = mutArray[i];
+//                mutArray[i] = temp;
+//            }
+//            j++;
+//        }
     }
     
     return [mutArray copy];
