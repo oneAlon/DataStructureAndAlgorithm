@@ -14,4 +14,5 @@
 |  桶排序  |   <a href="https://www.codecogs.com/eqnedit.php?latex=n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n" title="n" /></a>   |   稳定   |
 
 
-
+## 归并排序
+将两个有序数列合并成一个有序序列, 为归并
