@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SortDemo.xcodeproj">
+      location = "self:Sort.xcodeproj">
    </FileRef>
 </Workspace>
