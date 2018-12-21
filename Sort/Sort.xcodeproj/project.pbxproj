@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88157F3C21CC93BC005777CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88157F3B21CC93BC005777CB /* main.m */; };
+		88157F4721CC9811005777CB /* YAMergeSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 88157F4621CC9811005777CB /* YAMergeSort.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +26,8 @@
 /* Begin PBXFileReference section */
 		88157F3821CC93BC005777CB /* Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		88157F3B21CC93BC005777CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		88157F4221CC93D1005777CB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../DataStructureAndAlgorithm/DataStructureAndAlgorithm/ViewController.m; sourceTree = "<group>"; };
+		88157F4521CC9811005777CB /* YAMergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAMergeSort.h; sourceTree = "<group>"; };
+		88157F4621CC9811005777CB /* YAMergeSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YAMergeSort.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +60,19 @@
 		88157F3A21CC93BC005777CB /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				88157F4221CC93D1005777CB /* ViewController.m */,
 				88157F3B21CC93BC005777CB /* main.m */,
+				88157F4421CC97EF005777CB /* 归并排序 */,
 			);
 			path = Sort;
+			sourceTree = "<group>";
+		};
+		88157F4421CC97EF005777CB /* 归并排序 */ = {
+			isa = PBXGroup;
+			children = (
+				88157F4521CC9811005777CB /* YAMergeSort.h */,
+				88157F4621CC9811005777CB /* YAMergeSort.c */,
+			);
+			path = "归并排序";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +101,7 @@
 		88157F3021CC93BC005777CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YA;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = OneAlon;
 				TargetAttributes = {
@@ -120,6 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88157F4721CC9811005777CB /* YAMergeSort.c in Sources */,
 				88157F3C21CC93BC005777CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

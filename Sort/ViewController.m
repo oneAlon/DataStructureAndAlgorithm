@@ -186,68 +186,7 @@
 }
 
 
-#pragma mark - 归并排序
 
-/*
- 归并排序
-    将两个有序数列合并成一个有序序列, 为归并
- */
-
-- (NSArray *)mergeSort:(NSArray *)array {
-    NSMutableArray *mutArray = [array mutableCopy];
-//    NSArray *array2 = @[@55, @23, @93, @4];
-//    NSMutableArray *mutArray = [array2 mutableCopy];
-    [self mergeSort:mutArray start:0 end:((int)mutArray.count - 1)];
-    return [mutArray copy];
-}
-
-- (void)mergeSort:(NSMutableArray *)array start:(int)start end:(int)end {
-    if (start >= end) {
-        return;
-    }
-    int mid = (start + end)/2;
-    [self mergeSort:array start:start end:mid];     // 0~4
-    [self mergeSort:array start:(mid + 1) end:end]; // 5~9
-    [self mergeArray:array start:start mid:mid end:end];
-}
-
-
-/**
- 将一个数组中的两个相邻有序区间合并成一个
-
- @param array 待合并的数组
- @param start 第一个区间的开始位置
- @param mid 第一个区间的结束位置
- @param end 第二个区间的结束位置
- */
-- (void)mergeArray:(NSMutableArray *)array start:(int)start mid:(int)mid end:(int)end {
-    NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:array.count];
-    int i = start; // 第一个区间的索引
-    int j = mid + 1; // 第二个区间的索引
-    int k = 0; // 临时区间索引
-    
-    while (i <= mid && j <= end) {
-        if ([array[i] intValue] <= [array[j] intValue]) {
-            tempArray[k++] = array[i++];
-        }else{
-            tempArray[k++] = array[j++];
-        }
-    }
-    
-    // 第二个区间全部放入临时数组
-    while (i <= mid) {
-        tempArray[k++] = array[i++];
-    }
-    
-    // 第一个区间已经全部放入临时数组
-    while (j <= end) {
-        tempArray[k++] = array[j++];
-    }
-    
-    for (int i = 0; i < k; i++) {
-        array[start + i] = tempArray[i];
-    }
-}
 
 
 @end
