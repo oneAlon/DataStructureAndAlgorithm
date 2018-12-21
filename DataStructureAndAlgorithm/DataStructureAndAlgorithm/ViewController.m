@@ -9,6 +9,17 @@
 #import "ViewController.h"
 
 /*
+ 数组
+ 字典
+ 字符串
+ 链表
+ 栈和队列
+ 二叉树
+ 排序
+ 搜索
+ */
+
+/*
  冒泡排序       n平方     稳定
  插入排序       n平方     稳定
  选择排序       n平方     不稳定
@@ -43,6 +54,8 @@
     NSArray *quickSortArray = [self quickSort:array];
     NSLog(@"快速排序:%@", quickSortArray);
     
+    NSArray *mergeSortArray = [self mergeSort:array];
+    NSLog(@"归并排序:%@", mergeSortArray);
     
 }
 
@@ -120,10 +133,18 @@
     return [mutArray copy];
 }
 
+#pragma mark - 快速排序
 
 /**
  快速排序
-    对冒泡排序的一种改进,
+    对冒泡排序的一种改进, 通过一趟排序将要进行排序的数据分割成两个独立的部分, 一部分数据比另一部分所有的数据都要小
+    然后再按照这个方法将剩下的数据进行排序, 整个过程使用递归进行.
+ 
+ 实现:
+    一般选择数组的第一个数据作为基准元素.
+    定义两个指针left right
+    int temp = array[left]
+ 
  */
 - (NSArray *)quickSort:(NSArray *)array {
     return [self quicklySort:[array mutableCopy] left:0 right:((int)array.count - 1)];
@@ -158,22 +179,74 @@
     array[left] = [NSNumber numberWithInt:temp];
     
     // 递归
-    
-//     11,
-//     23,
-//     34,
-//     23,
-//     4,
-//     1,
-//     55,
-//     56,
-//     93,
-//     69
-    // left = 6;
     [self quicklySort:array left:0 right:(left - 1)];
     [self quicklySort:array left:(left + 1) right:rightIndex];
     
     return [array copy];
+}
+
+
+#pragma mark - 归并排序
+
+/*
+ 归并排序
+    将两个有序数列合并成一个有序序列, 为归并
+ */
+
+- (NSArray *)mergeSort:(NSArray *)array {
+    NSMutableArray *mutArray = [array mutableCopy];
+//    NSArray *array2 = @[@55, @23, @93, @4];
+//    NSMutableArray *mutArray = [array2 mutableCopy];
+    [self mergeSort:mutArray start:0 end:((int)mutArray.count - 1)];
+    return [mutArray copy];
+}
+
+- (void)mergeSort:(NSMutableArray *)array start:(int)start end:(int)end {
+    if (start >= end) {
+        return;
+    }
+    int mid = (start + end)/2;
+    [self mergeSort:array start:start end:mid];     // 0~4
+    [self mergeSort:array start:(mid + 1) end:end]; // 5~9
+    [self mergeArray:array start:start mid:mid end:end];
+}
+
+
+/**
+ 将一个数组中的两个相邻有序区间合并成一个
+
+ @param array 待合并的数组
+ @param start 第一个区间的开始位置
+ @param mid 第一个区间的结束位置
+ @param end 第二个区间的结束位置
+ */
+- (void)mergeArray:(NSMutableArray *)array start:(int)start mid:(int)mid end:(int)end {
+    NSMutableArray *tempArray = [NSMutableArray arrayWithCapacity:array.count];
+    int i = start; // 第一个区间的索引
+    int j = mid + 1; // 第二个区间的索引
+    int k = 0; // 临时区间索引
+    
+    while (i <= mid && j <= end) {
+        if ([array[i] intValue] <= [array[j] intValue]) {
+            tempArray[k++] = array[i++];
+        }else{
+            tempArray[k++] = array[j++];
+        }
+    }
+    
+    // 第二个区间全部放入临时数组
+    while (i <= mid) {
+        tempArray[k++] = array[i++];
+    }
+    
+    // 第一个区间已经全部放入临时数组
+    while (j <= end) {
+        tempArray[k++] = array[j++];
+    }
+    
+    for (int i = 0; i < k; i++) {
+        array[start + i] = tempArray[i];
+    }
 }
 
 
