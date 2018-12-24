@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ListSequentialStorage.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        // 线性表顺序存储
+        listSequentialStorageTest();
     }
     return 0;
 }

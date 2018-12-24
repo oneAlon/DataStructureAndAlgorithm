@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88157F2921CC9399005777CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88157F2821CC9399005777CB /* main.m */; };
+		8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		88157F2521CC9399005777CB /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		88157F2821CC9399005777CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8851A3A721D0BC5700A4B248 /* ListSequentialStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListSequentialStorage.h; sourceTree = "<group>"; };
+		8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListSequentialStorage.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +61,58 @@
 			isa = PBXGroup;
 			children = (
 				88157F2821CC9399005777CB /* main.m */,
+				88157F8721CCD292005777CB /* 线性表 */,
+				88157F8821CCD2B2005777CB /* 栈和队列 */,
+				88157F8921CCD2BE005777CB /* 串 */,
+				88157F8A21CCD2C5005777CB /* 树 */,
+				88157F8B21CCD2CE005777CB /* 图 */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		88157F8721CCD292005777CB /* 线性表 */ = {
+			isa = PBXGroup;
+			children = (
+				8851A3A321D0B9BF00A4B248 /* 线性表顺序存储 */,
+			);
+			path = "线性表";
+			sourceTree = "<group>";
+		};
+		88157F8821CCD2B2005777CB /* 栈和队列 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "栈和队列";
+			sourceTree = "<group>";
+		};
+		88157F8921CCD2BE005777CB /* 串 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "串";
+			sourceTree = "<group>";
+		};
+		88157F8A21CCD2C5005777CB /* 树 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "树";
+			sourceTree = "<group>";
+		};
+		88157F8B21CCD2CE005777CB /* 图 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "图";
+			sourceTree = "<group>";
+		};
+		8851A3A321D0B9BF00A4B248 /* 线性表顺序存储 */ = {
+			isa = PBXGroup;
+			children = (
+				8851A3A721D0BC5700A4B248 /* ListSequentialStorage.h */,
+				8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */,
+			);
+			path = "线性表顺序存储";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */,
 				88157F2921CC9399005777CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

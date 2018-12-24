@@ -61,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				88157F3B21CC93BC005777CB /* main.m */,
+				88157F8621CCD098005777CB /* 冒泡排序 */,
 				88157F4421CC97EF005777CB /* 归并排序 */,
 			);
 			path = Sort;
@@ -73,6 +74,13 @@
 				88157F4621CC9811005777CB /* YAMergeSort.c */,
 			);
 			path = "归并排序";
+			sourceTree = "<group>";
+		};
+		88157F8621CCD098005777CB /* 冒泡排序 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "冒泡排序";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
