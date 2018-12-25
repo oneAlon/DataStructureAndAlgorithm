@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "ListSequentialStorage.h"
-#import "ListChainStorage.h"
+#import "ListLinkStorage.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // 线性表顺序存储
-        listSequentialStorageTest();
+//        listSequentialStorageTest();
         
         // 线性表链式存储
-        listChainStorageTest();
+        ListLinkStorageTest();
     }
     return 0;
 }
