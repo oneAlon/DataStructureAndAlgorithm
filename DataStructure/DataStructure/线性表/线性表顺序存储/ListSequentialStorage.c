@@ -136,7 +136,8 @@ void printListData(List l) {
     printf("\n");
 }
 
-// 测试代码
+#pragma mark - 测试代码
+
 void listSequentialStorageTest(void) {
     
     Element e;
@@ -184,4 +185,21 @@ void listSequentialStorageTest(void) {
     printf("是否为空, 0(空), 1(非空), %d\n", isEmpty2);
 }
 
+/*
+ 线性表的顺序存储
+    平均时间复杂度为O(n)
+    存读数据的复杂度为O(1)
+    插入删除的复杂度为O(n)
+ 
+    比较适合元素个数不太变化, 更多是存读数据的应用.
+ 
+ 优点:
+    需要要关心表中元素之间的关系
+    可以快速的存取表中的元素
+ 
+ 缺点:
+    插入和删除需要移动大量的元素
+    当线性表的长度过大时, 无法确定存储空间的容量(本次示例分配容量为30)
+    存储空间造成碎片, 浪费
+ */
 
