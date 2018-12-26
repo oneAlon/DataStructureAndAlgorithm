@@ -39,20 +39,72 @@ Status initLinkList(LinkList *linkList) {
         return ERROR;
     }
     
+    (*linkList)->data = 666;// 初始化头结点数据, 可以用来存储表的长度等信息.
     (*linkList)->next = NULL;
     return OK;
 }
 
 #pragma mark - 链表的读取
 
+// 链表长度
 int linkListLength(LinkList linkList) {
     int length = 0;
-    LinkList p = linkList->next;
+    LinkList p = linkList->next;// 第一个节点
     while (p) {
         length++;
         p = p->next;
     }
     return length;
+}
+
+// 链表是否为空
+Status linkListEmpty(LinkList linkList) {
+    LinkList p = linkList->next;// 第一个节点
+    if (p) {
+        return FALSE;
+    }
+    return TRUE;
+}
+
+// 清空链表
+Status clearLinkList(LinkList *linkList) {
+    
+    LinkList p, q;
+    p = (*linkList)->next;// 指向第一个节点
+    while (p) {
+        q = p->next;
+        free(p);
+        p = q;
+    }
+    
+    (*linkList)->next = NULL;// 头指针指向NULL
+    
+    return OK;
+}
+
+// 获取元素
+Status GetElem(LinkList linkList,int i,Element *e) {
+    LinkList p;
+    int j = 1;
+    p = linkList->next;// p指向第一个节点
+    
+    while (p && j < i) {
+        p = p->next;
+        j++;
+    }
+    
+    if (!p || j > i) {
+        return ERROR;
+    }
+    
+    *e = p->data;
+    
+    return OK;
+}
+
+// 获取元素在链表中的位置
+int LocateElem(LinkList linkList,Element e) {
+    return 0;
 }
 
 #pragma mark - 链表的插入和删除
@@ -61,9 +113,9 @@ Status listInsert(LinkList *linkList, int i, Element e) {
     
     LinkList p, s;
     int j = 1;
-    p = *linkList;
+    p = *linkList;// 头结点
     
-    // 查找第i个节点
+    // 查找第i-1个节点
     while (p && j < i) {
         p = p->next;
         j++;
@@ -86,22 +138,23 @@ Status listInsert(LinkList *linkList, int i, Element e) {
 Status listDelete(LinkList *linkList, int i, Element *e) {
     LinkList p, s;
     int j = 1;
-    p = *linkList;
+    p = *linkList;// 头结点
     
-    // 查找第i个元素
-    while (p && j < i) {
+    // 查找第i-1个元素
+    while (p->next && j < i) {
         p = p->next;
         j++;
     }
     
-    if (!p || j > i) {
+    // 如果未找到第i个元素
+    if (!(p->next) || j > i) {
         return ERROR;
     }
     
     // 找到第i个元素
     s = p->next;
     p->next = s->next;
-    *e = p->data;
+    *e = s->data;
     
     return OK;
 }
@@ -123,6 +176,8 @@ void ListLinkStorageTest() {
     int length = linkListLength(linkList);
     printf("初始化以后表的长度:%d\n", length);
     
+    printf("初始化以后表是否为空; 1(空) 0(非空), %d\n", linkListEmpty(linkList));
+    
     // 插入
     for (int i = 0; i < 6; i++) {
         int insertStatus = listInsert(&linkList, 1, i + 2);
@@ -131,12 +186,20 @@ void ListLinkStorageTest() {
         }
     }
     
+    printf("插入数据以后表是否为空; 1(空) 0(非空), %d\n", linkListEmpty(linkList));
+    
     printf("插入以后的长度%d\n", linkListLength(linkList));
     
     // 删除
     listDelete(&linkList, 2, &e);
     printf("从链表中删除元素%d\n", e);
     
-//    printf("删除以后")
+    printf("删除以后的长度%d\n", linkListLength(linkList));
+    
+    GetElem(linkList, 3, &e);
+    printf("获取表中的第3个元素为%d\n", e);
+    
+    clearLinkList(&linkList);
+    printf("清空以后的的长度%d\n", linkListLength(linkList));
     
 }
