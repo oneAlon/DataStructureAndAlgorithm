@@ -10,6 +10,7 @@
 		88157F2921CC9399005777CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88157F2821CC9399005777CB /* main.m */; };
 		8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */; };
 		8851A3B021D1C3A300A4B248 /* ListLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */; };
+		8851A3BA21D3516900A4B248 /* StackSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3B921D3516900A4B248 /* StackSequentialStorage.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListSequentialStorage.c; sourceTree = "<group>"; };
 		8851A3AE21D1C3A300A4B248 /* ListLinkStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListLinkStorage.h; sourceTree = "<group>"; };
 		8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListLinkStorage.c; sourceTree = "<group>"; };
+		8851A3B821D3516900A4B248 /* StackSequentialStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackSequentialStorage.h; sourceTree = "<group>"; };
+		8851A3B921D3516900A4B248 /* StackSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StackSequentialStorage.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,9 @@
 		88157F8821CCD2B2005777CB /* 栈和队列 */ = {
 			isa = PBXGroup;
 			children = (
+				8851A3B721D3514F00A4B248 /* 栈的顺序存储 */,
+				8851A3BB21D36B1E00A4B248 /* 栈的共享空间存储 */,
+				8851A3BC21D36B3100A4B248 /* 栈的链式存储 */,
 			);
 			path = "栈和队列";
 			sourceTree = "<group>";
@@ -126,6 +132,29 @@
 				8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */,
 			);
 			path = "线性表链式存储";
+			sourceTree = "<group>";
+		};
+		8851A3B721D3514F00A4B248 /* 栈的顺序存储 */ = {
+			isa = PBXGroup;
+			children = (
+				8851A3B821D3516900A4B248 /* StackSequentialStorage.h */,
+				8851A3B921D3516900A4B248 /* StackSequentialStorage.c */,
+			);
+			path = "栈的顺序存储";
+			sourceTree = "<group>";
+		};
+		8851A3BB21D36B1E00A4B248 /* 栈的共享空间存储 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "栈的共享空间存储";
+			sourceTree = "<group>";
+		};
+		8851A3BC21D36B3100A4B248 /* 栈的链式存储 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "栈的链式存储";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */,
+				8851A3BA21D3516900A4B248 /* StackSequentialStorage.c in Sources */,
 				88157F2921CC9399005777CB /* main.m in Sources */,
 				8851A3B021D1C3A300A4B248 /* ListLinkStorage.c in Sources */,
 			);

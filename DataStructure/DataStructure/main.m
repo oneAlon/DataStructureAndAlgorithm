@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ListSequentialStorage.h"
 #import "ListLinkStorage.h"
+#import "StackSequentialStorage.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,7 +17,10 @@ int main(int argc, const char * argv[]) {
 //        listSequentialStorageTest();
         
         // 线性表链式存储
-        ListLinkStorageTest();
+//        ListLinkStorageTest();
+        
+        // 栈顺序存储
+        stackSequentialStorageTest();
     }
     return 0;
 }
