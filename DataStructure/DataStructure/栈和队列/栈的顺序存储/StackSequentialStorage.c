@@ -138,5 +138,5 @@ void stackSequentialStorageTest() {
     printf("获取栈顶元素为%d\n", e);
 
     clearStack(&s);
-    printf("pop以后的的长度%d\n", stackLength(s));
+    printf("clear以后的的长度%d\n", stackLength(s));
 }

@@ -11,6 +11,7 @@
 		8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */; };
 		8851A3B021D1C3A300A4B248 /* ListLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */; };
 		8851A3BA21D3516900A4B248 /* StackSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3B921D3516900A4B248 /* StackSequentialStorage.c */; };
+		8851A3BF21D4ACA400A4B248 /* StackLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ListLinkStorage.c; sourceTree = "<group>"; };
 		8851A3B821D3516900A4B248 /* StackSequentialStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackSequentialStorage.h; sourceTree = "<group>"; };
 		8851A3B921D3516900A4B248 /* StackSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StackSequentialStorage.c; sourceTree = "<group>"; };
+		8851A3BD21D4ACA400A4B248 /* StackLinkStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackLinkStorage.h; sourceTree = "<group>"; };
+		8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StackLinkStorage.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 		8851A3BC21D36B3100A4B248 /* 栈的链式存储 */ = {
 			isa = PBXGroup;
 			children = (
+				8851A3BD21D4ACA400A4B248 /* StackLinkStorage.h */,
+				8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */,
 			);
 			path = "栈的链式存储";
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */,
 				8851A3BA21D3516900A4B248 /* StackSequentialStorage.c in Sources */,
 				88157F2921CC9399005777CB /* main.m in Sources */,
+				8851A3BF21D4ACA400A4B248 /* StackLinkStorage.c in Sources */,
 				8851A3B021D1C3A300A4B248 /* ListLinkStorage.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
