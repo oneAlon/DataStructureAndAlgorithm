@@ -73,19 +73,19 @@ Status outLinkQueue(LinkQueue *queue, Element *e) {
     if (queue->front == queue->rear) {
         return ERROR;
     }
-    Node *node = queue->front->next;
-    *e = node->data;
+    Node *n = queue->front->next;
+    *e = n->data;
     
     // 头结点指向下一个节点
-    queue->front->next = node->next;
+    queue->front->next = n->next;
     
-    if (queue->rear == node) {
+    if (queue->rear == n) {
         // 删除的最后一个节点
         queue->front = queue->rear;
     }
     
     // 释放节点内存
-    free(node);
+//    free(n);
     
     return OK;
 }

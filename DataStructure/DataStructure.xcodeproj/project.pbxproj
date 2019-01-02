@@ -13,26 +13,12 @@
 		8851A3BA21D3516900A4B248 /* StackSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3B921D3516900A4B248 /* StackSequentialStorage.c */; };
 		8851A3BF21D4ACA400A4B248 /* StackLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */; };
 		8851A3C321D5F75600A4B248 /* QueueSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3C221D5F75600A4B248 /* QueueSequentialStorage.c */; };
-		8851A3D421D5FBDE00A4B248 /* QueueSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3C221D5F75600A4B248 /* QueueSequentialStorage.c */; };
-		8851A3D521D5FBDE00A4B248 /* ListSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3A821D0BC5700A4B248 /* ListSequentialStorage.c */; };
-		8851A3D621D5FBDE00A4B248 /* StackSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3B921D3516900A4B248 /* StackSequentialStorage.c */; };
-		8851A3D721D5FBDE00A4B248 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88157F2821CC9399005777CB /* main.m */; };
-		8851A3D821D5FBDE00A4B248 /* StackLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */; };
-		8851A3D921D5FBDE00A4B248 /* ListLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3AF21D1C3A300A4B248 /* ListLinkStorage.c */; };
 		8851A3E321D5FE5B00A4B248 /* QueueLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3E221D5FE5B00A4B248 /* QueueLinkStorage.c */; };
+		8851A3E621D615C300A4B248 /* MyString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3E521D615C300A4B248 /* MyString.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		88157F2321CC9399005777CB /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		8851A3DB21D5FBDE00A4B248 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -56,20 +42,14 @@
 		8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = StackLinkStorage.c; sourceTree = "<group>"; };
 		8851A3C121D5F75600A4B248 /* QueueSequentialStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueSequentialStorage.h; sourceTree = "<group>"; };
 		8851A3C221D5F75600A4B248 /* QueueSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QueueSequentialStorage.c; sourceTree = "<group>"; };
-		8851A3DF21D5FBDE00A4B248 /* DataStructure copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DataStructure copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8851A3E121D5FE5B00A4B248 /* QueueLinkStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueLinkStorage.h; sourceTree = "<group>"; };
 		8851A3E221D5FE5B00A4B248 /* QueueLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QueueLinkStorage.c; sourceTree = "<group>"; };
+		8851A3E421D615C300A4B248 /* MyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
+		8851A3E521D615C300A4B248 /* MyString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyString.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		88157F2221CC9399005777CB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8851A3DA21D5FBDE00A4B248 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				88157F2521CC9399005777CB /* DataStructure */,
-				8851A3DF21D5FBDE00A4B248 /* DataStructure copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,7 +82,7 @@
 				88157F8721CCD292005777CB /* 线性表 */,
 				88157F8821CCD2B2005777CB /* 栈和队列 */,
 				88157F8921CCD2BE005777CB /* 串 */,
-				88157F8A21CCD2C5005777CB /* 树 */,
+				8851A3E721D6226900A4B248 /* 树 */,
 				88157F8B21CCD2CE005777CB /* 图 */,
 			);
 			path = DataStructure;
@@ -133,15 +112,10 @@
 		88157F8921CCD2BE005777CB /* 串 */ = {
 			isa = PBXGroup;
 			children = (
+				8851A3E421D615C300A4B248 /* MyString.h */,
+				8851A3E521D615C300A4B248 /* MyString.c */,
 			);
 			path = "串";
-			sourceTree = "<group>";
-		};
-		88157F8A21CCD2C5005777CB /* 树 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "树";
 			sourceTree = "<group>";
 		};
 		88157F8B21CCD2CE005777CB /* 图 */ = {
@@ -212,6 +186,29 @@
 			path = "队列链式存储";
 			sourceTree = "<group>";
 		};
+		8851A3E721D6226900A4B248 /* 树 */ = {
+			isa = PBXGroup;
+			children = (
+				8851A3E821D6227100A4B248 /* 二叉树顺序存储 */,
+				8851A3E921D6227900A4B248 /* 二叉树链式存储 */,
+			);
+			path = "树";
+			sourceTree = "<group>";
+		};
+		8851A3E821D6227100A4B248 /* 二叉树顺序存储 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "二叉树顺序存储";
+			sourceTree = "<group>";
+		};
+		8851A3E921D6227900A4B248 /* 二叉树链式存储 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "二叉树链式存储";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,23 +227,6 @@
 			name = DataStructure;
 			productName = DataStructure;
 			productReference = 88157F2521CC9399005777CB /* DataStructure */;
-			productType = "com.apple.product-type.tool";
-		};
-		8851A3D221D5FBDE00A4B248 /* DataStructure copy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8851A3DC21D5FBDE00A4B248 /* Build configuration list for PBXNativeTarget "DataStructure copy" */;
-			buildPhases = (
-				8851A3D321D5FBDE00A4B248 /* Sources */,
-				8851A3DA21D5FBDE00A4B248 /* Frameworks */,
-				8851A3DB21D5FBDE00A4B248 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "DataStructure copy";
-			productName = DataStructure;
-			productReference = 8851A3DF21D5FBDE00A4B248 /* DataStructure copy */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -276,7 +256,6 @@
 			projectRoot = "";
 			targets = (
 				88157F2421CC9399005777CB /* DataStructure */,
-				8851A3D221D5FBDE00A4B248 /* DataStructure copy */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8851A3E621D615C300A4B248 /* MyString.c in Sources */,
 				8851A3C321D5F75600A4B248 /* QueueSequentialStorage.c in Sources */,
 				8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */,
 				8851A3E321D5FE5B00A4B248 /* QueueLinkStorage.c in Sources */,
@@ -293,19 +273,6 @@
 				88157F2921CC9399005777CB /* main.m in Sources */,
 				8851A3BF21D4ACA400A4B248 /* StackLinkStorage.c in Sources */,
 				8851A3B021D1C3A300A4B248 /* ListLinkStorage.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8851A3D321D5FBDE00A4B248 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8851A3D421D5FBDE00A4B248 /* QueueSequentialStorage.c in Sources */,
-				8851A3D521D5FBDE00A4B248 /* ListSequentialStorage.c in Sources */,
-				8851A3D621D5FBDE00A4B248 /* StackSequentialStorage.c in Sources */,
-				8851A3D721D5FBDE00A4B248 /* main.m in Sources */,
-				8851A3D821D5FBDE00A4B248 /* StackLinkStorage.c in Sources */,
-				8851A3D921D5FBDE00A4B248 /* ListLinkStorage.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,22 +406,6 @@
 			};
 			name = Release;
 		};
-		8851A3DD21D5FBDE00A4B248 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		8851A3DE21D5FBDE00A4B248 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,15 +423,6 @@
 			buildConfigurations = (
 				88157F2D21CC9399005777CB /* Debug */,
 				88157F2E21CC9399005777CB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8851A3DC21D5FBDE00A4B248 /* Build configuration list for PBXNativeTarget "DataStructure copy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8851A3DD21D5FBDE00A4B248 /* Debug */,
-				8851A3DE21D5FBDE00A4B248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

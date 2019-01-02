@@ -28,6 +28,7 @@
 		88157F3B21CC93BC005777CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88157F4521CC9811005777CB /* YAMergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAMergeSort.h; sourceTree = "<group>"; };
 		88157F4621CC9811005777CB /* YAMergeSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YAMergeSort.c; sourceTree = "<group>"; };
+		8868FA5B21DC8D9100F9FAA9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				88157F3B21CC93BC005777CB /* main.m */,
+				8868FA5B21DC8D9100F9FAA9 /* ViewController.m */,
 				88157F8621CCD098005777CB /* 冒泡排序 */,
 				88157F4421CC97EF005777CB /* 归并排序 */,
 			);

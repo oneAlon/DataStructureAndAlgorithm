@@ -11,6 +11,7 @@
 #import "ListLinkStorage.h"
 #import "StackSequentialStorage.h"
 #import "StackLinkStorage.h"
+#import "MyString.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -24,7 +25,10 @@ int main(int argc, const char * argv[]) {
 //        stackSequentialStorageTest();
         
         // 栈的链式存储
-        stackLinkStorageTest();
+//        stackLinkStorageTest();
+        
+        // 字符串测试
+//        myStrTest();
     }
     return 0;
 }
