@@ -14,7 +14,6 @@
 		8851A3BF21D4ACA400A4B248 /* StackLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3BE21D4ACA400A4B248 /* StackLinkStorage.c */; };
 		8851A3C321D5F75600A4B248 /* QueueSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3C221D5F75600A4B248 /* QueueSequentialStorage.c */; };
 		8851A3E321D5FE5B00A4B248 /* QueueLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3E221D5FE5B00A4B248 /* QueueLinkStorage.c */; };
-		8851A3E621D615C300A4B248 /* MyString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8851A3E521D615C300A4B248 /* MyString.c */; };
 		8868FAD621DDE22A00F9FAA9 /* TreeLinkStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8868FAD521DDE22A00F9FAA9 /* TreeLinkStorage.c */; };
 		8868FADC21DDEF5800F9FAA9 /* TreeSequentialStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 8868FADB21DDEF5800F9FAA9 /* TreeSequentialStorage.c */; };
 /* End PBXBuildFile section */
@@ -46,8 +45,6 @@
 		8851A3C221D5F75600A4B248 /* QueueSequentialStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QueueSequentialStorage.c; sourceTree = "<group>"; };
 		8851A3E121D5FE5B00A4B248 /* QueueLinkStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueLinkStorage.h; sourceTree = "<group>"; };
 		8851A3E221D5FE5B00A4B248 /* QueueLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QueueLinkStorage.c; sourceTree = "<group>"; };
-		8851A3E421D615C300A4B248 /* MyString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyString.h; sourceTree = "<group>"; };
-		8851A3E521D615C300A4B248 /* MyString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MyString.c; sourceTree = "<group>"; };
 		8868FAD421DDE22A00F9FAA9 /* TreeLinkStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeLinkStorage.h; sourceTree = "<group>"; };
 		8868FAD521DDE22A00F9FAA9 /* TreeLinkStorage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = TreeLinkStorage.c; sourceTree = "<group>"; };
 		8868FADA21DDEF5800F9FAA9 /* TreeSequentialStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeSequentialStorage.h; sourceTree = "<group>"; };
@@ -87,7 +84,6 @@
 				88157F2821CC9399005777CB /* main.m */,
 				88157F8721CCD292005777CB /* 线性表 */,
 				88157F8821CCD2B2005777CB /* 栈和队列 */,
-				88157F8921CCD2BE005777CB /* 串 */,
 				8851A3E721D6226900A4B248 /* 树 */,
 				88157F8B21CCD2CE005777CB /* 图 */,
 			);
@@ -107,21 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				8851A3B721D3514F00A4B248 /* 栈的顺序存储 */,
-				8851A3BB21D36B1E00A4B248 /* 栈的共享空间存储 */,
 				8851A3BC21D36B3100A4B248 /* 栈的链式存储 */,
 				8851A3C021D5F72600A4B248 /* 队列顺序存储 */,
 				8851A3E021D5FE3700A4B248 /* 队列链式存储 */,
 			);
 			path = "栈和队列";
-			sourceTree = "<group>";
-		};
-		88157F8921CCD2BE005777CB /* 串 */ = {
-			isa = PBXGroup;
-			children = (
-				8851A3E421D615C300A4B248 /* MyString.h */,
-				8851A3E521D615C300A4B248 /* MyString.c */,
-			);
-			path = "串";
 			sourceTree = "<group>";
 		};
 		88157F8B21CCD2CE005777CB /* 图 */ = {
@@ -156,13 +142,6 @@
 				8851A3B921D3516900A4B248 /* StackSequentialStorage.c */,
 			);
 			path = "栈的顺序存储";
-			sourceTree = "<group>";
-		};
-		8851A3BB21D36B1E00A4B248 /* 栈的共享空间存储 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "栈的共享空间存储";
 			sourceTree = "<group>";
 		};
 		8851A3BC21D36B3100A4B248 /* 栈的链式存储 */ = {
@@ -275,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8851A3E621D615C300A4B248 /* MyString.c in Sources */,
 				8851A3C321D5F75600A4B248 /* QueueSequentialStorage.c in Sources */,
 				8868FADC21DDEF5800F9FAA9 /* TreeSequentialStorage.c in Sources */,
 				8851A3A921D0BC5700A4B248 /* ListSequentialStorage.c in Sources */,

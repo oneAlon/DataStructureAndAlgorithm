@@ -11,7 +11,6 @@
 #import "ListLinkStorage.h"
 #import "StackSequentialStorage.h"
 #import "StackLinkStorage.h"
-#import "MyString.h"
 #import "TreeLinkStorage.h"
 
 int main(int argc, const char * argv[]) {
@@ -27,9 +26,6 @@ int main(int argc, const char * argv[]) {
         
         // 栈的链式存储
 //        stackLinkStorageTest();
-        
-        // 字符串测试
-//        myStrTest();
         
         // 二叉树链式存储
         treeLinkStorageTest();

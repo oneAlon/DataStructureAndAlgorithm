@@ -23,7 +23,7 @@ typedef struct Tag_Node {
     struct Tag_Node *next;// 指向下一个节点
 }Node;
 
-// 定义连栈
+// 定义链栈
 typedef struct Tag_LinkStack {
     Node *top;// top指针, 指向节点
     int count;// 个数
@@ -31,7 +31,7 @@ typedef struct Tag_LinkStack {
 
 // 初始化
 Status initStackLink(LinkStack *s) {
-    // 分配空间
+    // 分配空间, 指向头结点
     s->top = (Node *)malloc(sizeof(Node));
     if (!s->top) {
         return ERROR;
