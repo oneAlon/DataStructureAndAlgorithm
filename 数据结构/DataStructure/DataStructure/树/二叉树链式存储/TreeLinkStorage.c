@@ -134,21 +134,60 @@ void inorderRecursive(BiTree tree) {
 //    }
 //}
 
-// 中序, 非递归遍历(自己维护栈)
+//// 中序, 非递归遍历(自己维护栈)
+//void inorderNoRecursive(BiTree tree) {
+//    if (tree == NULL) {
+//        return;
+//    }
+//    BiTree root = tree;
+//    BiTree node;
+//
+//    do {
+//        // 将根结点和左子树入栈
+//        while (root != NULL) {
+//            push(root);
+//            root = root->left;
+//        }
+//
+//        // 访问栈顶元素
+//        node = pop();
+//        printf("%d", node->data);
+//
+//        // 如果当前结点有右子树, 就要访问有子树内容
+//        if (node->right != NULL) {
+//            node = node->right;
+//        }else{
+//            // 如果没有右子树, 那么接下来访问栈顶的元素
+//            node = NULL;
+//        }
+//
+//    } while (1/*判断栈里边是否有数据*/ && node != NULL);
+//}
+
+// 后序, 非递归遍历(自己维护栈)
 void inorderNoRecursive(BiTree tree) {
     if (tree == NULL) {
         return;
     }
-    // 将根结点push进栈
-    push(tree);
+    BiTree root = tree;
     BiTree node;
-    while (1/*判断栈里边是否有数据*/) {
-        // 从栈中获取结点
+    
+    while (root != NULL && 1/*栈不为空*/) {
+        // 将左子树入栈
+        while (root != NULL) {
+            push(root);
+            root = root->left;
+        }
+        
+        // 取出栈顶元素
         node = pop();
-        if (node != NULL) {
-            printf("%d", node->data);
-            push(node->right);
-            push(node->left);
+        printf("%d\n", node->data);
+     
+        // 判断当前结点是否是栈顶节点的左子树, 如果是左子树的话, 需要先访问栈顶节点的右子树再访问栈顶节点
+        if (1/**/) {
+            node = NULL;/*栈顶节点的右子树*/;
+        }else{
+            node = NULL;
         }
     }
 }
