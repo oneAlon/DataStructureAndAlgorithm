@@ -20,10 +20,10 @@ typedef int Status;// Status是函数的类型,其值是函数结果状态代码
 // 定义线性表中的元素(这里假定元素为int类型)
 typedef int Element;
 
-// 定义节点数据结构
+// 定义结点数据结构
 typedef struct Tag_Node {
-    Element data;// 节点存储的数据
-    struct Tag_Node *next;// 指向下一个节点
+    Element data;// 结点存储的数据
+    struct Tag_Node *next;// 指向下一个结点
 }Node;
 
 // 定义链表, 指向结构体的指针
@@ -49,7 +49,7 @@ Status initLinkList(LinkList *linkList) {
 // 链表长度
 int linkListLength(LinkList linkList) {
     int length = 0;
-    LinkList p = linkList->next;// 第一个节点
+    LinkList p = linkList->next;// 第一个结点
     while (p) {
         length++;
         p = p->next;
@@ -59,7 +59,7 @@ int linkListLength(LinkList linkList) {
 
 // 链表是否为空
 Status linkListEmpty(LinkList linkList) {
-    LinkList p = linkList->next;// 第一个节点
+    LinkList p = linkList->next;// 第一个结点
     if (p) {
         return FALSE;
     }
@@ -70,7 +70,7 @@ Status linkListEmpty(LinkList linkList) {
 Status clearLinkList(LinkList *linkList) {
     
     LinkList p, q;
-    p = (*linkList)->next;// 指向第一个节点
+    p = (*linkList)->next;// 指向第一个结点
     while (p) {
         q = p->next;
         free(p);
@@ -86,7 +86,7 @@ Status clearLinkList(LinkList *linkList) {
 Status GetElem(LinkList linkList,int i,Element *e) {
     LinkList p;
     int j = 1;
-    p = linkList->next;// p指向第一个节点
+    p = linkList->next;// p指向第一个结点
     
     while (p && j < i) {
         p = p->next;
@@ -115,7 +115,7 @@ Status listInsert(LinkList *linkList, int i, Element e) {
     int j = 1;
     p = *linkList;// 头结点
     
-    // 查找第i-1个节点
+    // 查找第i-1个结点
     while (p && j < i) {
         p = p->next;
         j++;
@@ -126,7 +126,7 @@ Status listInsert(LinkList *linkList, int i, Element e) {
         return ERROR;
     }
     
-    // 创建节点
+    // 创建结点
     s = malloc(sizeof(Node));
     s->data = e;
     s->next = p->next;

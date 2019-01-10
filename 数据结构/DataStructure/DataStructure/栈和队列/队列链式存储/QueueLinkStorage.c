@@ -22,10 +22,10 @@ typedef int Status;// Status是函数的类型,其值是函数结果状态代码
 
 typedef int Element;
 
-// 定义节点
+// 定义结点
 typedef struct Tag_Node {
     Element data;
-    struct Tag_Node *next;// 指向下一个节点
+    struct Tag_Node *next;// 指向下一个结点
 }Node;
 
 // 定义连栈
@@ -52,7 +52,7 @@ Status initLinkQueue(LinkQueue *queue) {
 
 // 入队列
 Status inLinkQueue(LinkQueue *queue, Element e) {
-    // 创建节点
+    // 创建结点
     Node *node = malloc(sizeof(Node));
     if (!node) {
         return ERROR;
@@ -76,15 +76,15 @@ Status outLinkQueue(LinkQueue *queue, Element *e) {
     Node *n = queue->front->next;
     *e = n->data;
     
-    // 头结点指向下一个节点
+    // 头结点指向下一个结点
     queue->front->next = n->next;
     
     if (queue->rear == n) {
-        // 删除的最后一个节点
+        // 删除的最后一个结点
         queue->front = queue->rear;
     }
     
-    // 释放节点内存
+    // 释放结点内存
 //    free(n);
     
     return OK;

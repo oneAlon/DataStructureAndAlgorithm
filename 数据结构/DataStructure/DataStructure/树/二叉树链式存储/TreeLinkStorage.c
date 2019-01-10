@@ -7,6 +7,8 @@
 //
 
 #include "TreeLinkStorage.h"
+#include <stdlib.h>
+#include <time.h>
 
 // 状态码
 #define OK 1
@@ -16,53 +18,73 @@
 typedef int Status;// Status是函数的类型,其值是函数结果状态代码，如OK等
 
 // 定义元素类型
-typedef char Element;
+typedef int Element;
 Element Nil = ' ';
 
-// 定义节点类型
+// 定义结点类型
 typedef struct Tag_Node {
     Element data;
-    struct Tag_Node *lfet, *right;// 指向左右子节点
+    struct Tag_Node *lfet, *right;// 指向左右子结点
 }Node;
 
-// 定义二叉树, 指向节点
+// 定义二叉树, 指向结点
 typedef Node *BiTree;
 
 // 构造空二叉树
 Status initBiTree(BiTree *T) {
-    *T = NULL;
-    return OK;
-}
-
-// 构建二叉树
-Status createBiTree(BiTree *T) {
-    printf("请输入节点内容, #表示空节点\n");
-    Element e;
-    scanf("%c", &e);
-//    = getchar();
-    
-    // 如果输入
-    if (e == '#' || e == '\n') {
-        *T = NULL;
-        return ERROR;
-    }
-    
-    // 分配内存
     *T = (BiTree)malloc(sizeof(Node));
-    if (!*T) {
+    if (T) {
+        (*T)->data = -1;
+        (*T)->lfet = NULL;
+        (*T)->right = NULL;
+        return OK;
+    }else {
         return ERROR;
     }
-    
-    // 设置数据
-    (*T)->data = e;
-    // 构建左子树
-    createBiTree(&((*T)->lfet));
-    // 构建右字数
-    createBiTree(&((*T)->right));
-    
+}
+
+// 构建节点
+BiTree constructNode(Element e) {
+    BiTree pnode = (BiTree)malloc(sizeof(Node));
+    pnode->data = e;
+    pnode->lfet = NULL;
+    pnode->right = NULL;
+    printf("%d  ", e);
+    return pnode;
+}
+
+// 添加结点
+Status addNodeToTree(BiTree *root, BiTree newNode) {
+    if ((*root) == NULL) {
+        return ERROR;
+    }
+    // 判断根结点
+    if ((*root)->data == -1) {
+        *root = newNode;
+        return OK;
+    }
+    BiTree temp = *root;
+    while (temp != NULL) {
+        if (temp->data > newNode->data) {
+            if (temp->lfet == NULL) {
+                temp->lfet = newNode;
+                return OK;
+            }else{
+                temp = temp->lfet;
+            }
+        }else{
+            if (temp->right == NULL) {
+                temp->right = newNode;
+                return OK;
+            }else{
+                temp = temp->right;
+            }
+        }
+    }
     return OK;
 }
 
+// 树的深度
 int treeDepth(BiTree T) {
     int i, j;
     if (!T) {
@@ -81,20 +103,52 @@ int treeDepth(BiTree T) {
     return i > j ? i + 1 : j + 1;
 }
 
+// 递归遍历(递归会出现函数频繁的入栈和出栈, 很可能出现栈溢出, 而且效率比较低)
+void inorderRecursive(BiTree tree) {
+    if (tree == NULL) {
+        return;
+    }
+    BiTree temp = tree;
+    inorderRecursive(temp->lfet);
+    printf("%d\n", temp->data);
+    inorderRecursive(temp->right);
+}
+
+// 非递归遍历(自己维护栈)
+void inorderNoRecursive(BiTree tree) {
+}
+
+// 查找结点
+
+// 删除节点
+void deleteNode(BiTree *tree, Element e) {
+    
+}
+
 
 #pragma mark - Test
 
 void treeLinkStorageTest() {
+    
+    int testArray[7] = {100, 50, 200, 40, 80, 90, 60};
     
     BiTree tree;
     
     // 构建空二叉树
     initBiTree(&tree);
     
-    // 构建树
-    createBiTree(&tree);
+    // 构造二叉排序树
+    for (int i = 0; i <7 ; i++) {
+        Element e = testArray[i];
+        BiTree node = constructNode(e);
+        addNodeToTree(&tree, node);
+    }
+    printf("\n");
+    printf("二叉排序树构建完成\n");
+    printf("树的深度%d\n", treeDepth(tree));
     
-    // 深度
-    printf("二叉树的深度为%d\n", treeDepth(tree));
+    printf("中序递归遍历begin----\n");
+    inorderRecursive(tree);
+    printf("中序递归遍历end----\n");
     
 }

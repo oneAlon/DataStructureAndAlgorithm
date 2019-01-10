@@ -17,15 +17,15 @@ typedef int Status;// Status是函数的类型,其值是函数结果状态代码
 
 typedef int Element;
 
-// 定义节点
+// 定义结点
 typedef struct Tag_Node {
     Element data;
-    struct Tag_Node *next;// 指向下一个节点
+    struct Tag_Node *next;// 指向下一个结点
 }Node;
 
 // 定义链栈
 typedef struct Tag_LinkStack {
-    Node *top;// top指针, 指向节点
+    Node *top;// top指针, 指向结点
     int count;// 个数
 }LinkStack;
 
@@ -44,7 +44,7 @@ Status initStackLink(LinkStack *s) {
 // 销毁, 清空
 Status clearStackLink(LinkStack *s) {
     Node *p, *q;
-    p = s->top;// 获取栈顶节点;
+    p = s->top;// 获取栈顶结点;
     while (p) {
         q = p;
         p = p->next;
@@ -83,11 +83,11 @@ Status getStackLinkTop(LinkStack s, Element *e) {
 // push
 Status stackLinkPush(LinkStack *s, Element e) {
 
-    // 创建节点
+    // 创建结点
     Node *p = (Node *)malloc(sizeof(Node));
     p->data = e;
     
-    // 将节点添加到栈顶
+    // 将结点添加到栈顶
     p->next = s->top;
     s->top = p;
     
@@ -103,12 +103,12 @@ Status stackLinkPop(LinkStack *s, Element *e) {
         return ERROR;
     }
     
-    // 取出top节点
+    // 取出top结点
     Node *p;
     *e = s->top->data;
     p = s->top;
     
-    // 设置top指针指向下一个节点
+    // 设置top指针指向下一个结点
     s->top = p->next;
     
     // 释放内存
