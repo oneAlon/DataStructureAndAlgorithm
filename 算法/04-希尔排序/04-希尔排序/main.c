@@ -24,7 +24,7 @@ void printArray(int *array, size_t arr_size) {
 }
 
 void sort() {
-    int array[] = {9, 5, 8, 3, 7, 4, 1, 6, 2};
+    int array[] = {9, 5, 8, 3, 7, 4, 1, 6, 2, 3};
     size_t arr_size = sizeof(array) / sizeof(array[0]);
     
     // 设置间隔, 相隔某个增量的记录成一个子序列, 实现跳跃式的移动, 提高效率
@@ -37,17 +37,13 @@ void sort() {
         // 设置增量, 每次减少增量, 知道增量为1
         increment = increment / 3 + 1;
         for (int i = increment; i < arr_size; i++) {
-            for (int j = i - increment; j>=0 && array[i] < array[j]; j -= increment) {
-                swap(array, i, j);
+            int temp = array[i];
+            int j = i - increment;
+            while (j >= 0 && array[j] > temp) {
+                array[j + increment] = array[j];
+                j -= increment;
             }
-            
-//            int j = i - increment;
-//            while (j > 0) {
-//                if (array[i] < array[j]) {
-//                    swap(array, i, j);
-//                }
-//                j = j - increment;
-//            }
+            array[j + increment] = temp;
         }
     }
     
