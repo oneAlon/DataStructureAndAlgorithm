@@ -1,8 +1,8 @@
 //
 //  main.c
-//  BuddleSort
+//  01-冒泡排序
 //
-//  Created by xygj on 2019/1/4.
+//  Created by xygj on 2019/1/11.
 //  Copyright © 2019 OneAlon. All rights reserved.
 //
 
@@ -27,6 +27,7 @@ void printArray(int *array, size_t arr_size) {
 
 /*
  思想: 比较两个相邻的关键字, 如果反序就交换, 直到没有反序的记录为止
+ 复杂度: O(n平方)
  */
 
 void bubbleSort() {
@@ -36,6 +37,7 @@ void bubbleSort() {
     printf("冒泡排序前:\n");
     printArray(array, arr_size);
     
+    // i执行一次, 获取到一个最大值
     for (int i = 0; i < arr_size; i++) {
         for (int j = 0; j < arr_size - i - 1; j++) {
             if (array[j] > array[j + 1]) {
@@ -54,4 +56,3 @@ int main(int argc, const char * argv[]) {
     bubbleSort();
     return 0;
 }
-
