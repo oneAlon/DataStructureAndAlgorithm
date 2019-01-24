@@ -26,10 +26,10 @@ void printArray(int *array, size_t arr_size) {
 #pragma mark - 顺序查找
 
 /*
- 思想: 比较两个相邻的关键字, 如果反序就交换, 直到没有反序的记录为止
- 复杂度: O(n平方)
+ 顺序查找, 适用于存储结构为顺序存储和链式存储的线性表.
+ 无序查找
+ 时间复杂度为O(n)
  */
-
 int suquenceSort(int a) {
     int array[] = {9, 2, 5, 8, 3, 7, 4, 1, 6, 2};
     size_t arr_size = sizeof(array) / sizeof(array[0]);
