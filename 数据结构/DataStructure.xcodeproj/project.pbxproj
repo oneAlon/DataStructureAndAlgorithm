@@ -85,7 +85,6 @@
 				88157F8721CCD292005777CB /* 线性表 */,
 				88157F8821CCD2B2005777CB /* 栈和队列 */,
 				8851A3E721D6226900A4B248 /* 树 */,
-				88157F8B21CCD2CE005777CB /* 图 */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -108,13 +107,6 @@
 				8851A3E021D5FE3700A4B248 /* 队列链式存储 */,
 			);
 			path = "栈和队列";
-			sourceTree = "<group>";
-		};
-		88157F8B21CCD2CE005777CB /* 图 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "图";
 			sourceTree = "<group>";
 		};
 		8851A3A321D0B9BF00A4B248 /* 线性表顺序存储 */ = {
