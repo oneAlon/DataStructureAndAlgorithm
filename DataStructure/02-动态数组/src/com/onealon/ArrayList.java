@@ -14,12 +14,20 @@ public class ArrayList<E> {
      * 数组默认容量
      */
     private static final int DEFAULT_CAPACITY = 10;
+    /**
+     * 数据未找到
+     */
+    public static final int ELEMENT_NOT_FOUND = -1;
 
+    /**
+     * 构造方法
+     */
     public ArrayList() {
         this(DEFAULT_CAPACITY);
     }
 
     public ArrayList(int capacity) {
+        // 设置初始化数组的空间大小
         capacity = capacity > DEFAULT_CAPACITY ? capacity : DEFAULT_CAPACITY;
         elements = new Object[capacity];
     }
@@ -39,6 +47,8 @@ public class ArrayList<E> {
      */
     public void add(int index, E element) {
         checkRangeForAdd(index);
+        // 确认当前容量是否可以再添加元素
+        ensureCapacity();
         // 向后移动元素
         for (int i = size - 1; i >= index; i--) {
             elements[i + 1] = elements[i];
@@ -101,7 +111,7 @@ public class ArrayList<E> {
      * @return
      */
     public boolean isEmpty() {
-        return size == 0 ? true : false;
+        return size == 0;
     }
 
     /**
@@ -147,7 +157,7 @@ public class ArrayList<E> {
                 if (element.equals(elements[i])) return i;
             }
         }
-        return -1;
+        return ELEMENT_NOT_FOUND;
     }
 
     /**
@@ -165,9 +175,26 @@ public class ArrayList<E> {
     }
 
     private void checkRangeForAdd(int index) {
+        // 为添加元素 做范围判断
         if (index < 0 || index > size) {
             outOfBounds(index);
         }
+    }
+
+    /**
+     * 数组扩容
+     */
+    private void ensureCapacity() {
+        // oldCapacity: 初始化的容量
+        int oldCapacity = elements.length;
+        if (oldCapacity > size) return;
+        int newCapacity = oldCapacity + (oldCapacity >> 1);
+        Object[] newElements = new Object[newCapacity];
+        for (int i = 0; i < size; i++) {
+            newElements[i] = elements[i];
+        }
+        elements = newElements;
+        System.out.println(oldCapacity + "扩容为" + newCapacity);
     }
 
     @Override
