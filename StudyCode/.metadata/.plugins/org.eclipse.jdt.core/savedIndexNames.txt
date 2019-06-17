@@ -1,7 +1,6 @@
 INDEX VERSION 1.131+/Users/xygj/Documents/github/DataStructureAndAlgorithm/StudyCode/.metadata/.plugins/org.eclipse.jdt.core
 869832556.index
 3123363929.index
-1260282672.index
 2904964497.index
 3959967961.index
 156682323.index

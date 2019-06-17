@@ -186,6 +186,7 @@ public class ArrayList<E> {
      */
     private void ensureCapacity() {
         // oldCapacity: 初始化的容量
+        // size是数组实时大小
         int oldCapacity = elements.length;
         if (oldCapacity > size) return;
         int newCapacity = oldCapacity + (oldCapacity >> 1);

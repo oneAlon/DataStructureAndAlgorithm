@@ -16,7 +16,8 @@ public class Main {
         list.add(99);
         list.add(100);
         list.add(110);
-        list.remove(2);
+        list.remove(0);
+        list.add(list.size(), 111);
         System.out.println("33在list中的索引:" + list.indexOf(33));
         System.out.println("是否包含某个元素:" + list.contains(333));
         System.out.println(list);

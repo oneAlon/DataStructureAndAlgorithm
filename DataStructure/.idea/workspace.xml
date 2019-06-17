@@ -2,37 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ca6e24a-32f2-43a6-867d-05a5cc3321b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/02-动态数组/com/onealon/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-动态数组/com/onealon/ArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/02-动态数组/com/onealon/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/02-动态数组/com/onealon/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-链表/src/com/onealon/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/03-链表/src/com/onealon/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/03-链表/com/onealon/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/03-链表/com/onealon/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/01-复杂度/.location" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/01-复杂度/.markers.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/01-复杂度/.syncinfo.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.location" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.location" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.markers.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.syncinfo.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.syncinfo.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.projects/02-动态数组/.syncinfo.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/0.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.resources/1.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/1231190624.index" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/1231190624.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/1260282672.index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyCode/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,33 +30,39 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="DataStructure" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="195" column="31" lean-forward="true" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
-              <folding>
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
-                <element signature="e#1984#1985#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="301">
+              <caret line="196" column="31" lean-forward="true" selection-start-line="196" selection-start-column="31" selection-end-line="196" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -94,11 +89,18 @@
       <list>
         <option value="$PROJECT_DIR$/01-复杂度/src/com/onealon/TimeTool.java" />
         <option value="$PROJECT_DIR$/01-复杂度/src/com/onealon/Main.java" />
+        <option value="$PROJECT_DIR$/00-leetcode/src/数组/_1_两数之和.java" />
         <option value="$PROJECT_DIR$/03-链表/src/com/onealon/Main.java" />
         <option value="$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java" />
         <option value="$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -149,9 +151,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560755496267" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560771678830" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunDashboard">
@@ -206,10 +209,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_1_两数之和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数组._1_两数之和" />
+      <module name="00-leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="数组.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application._1_两数之和" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -224,12 +241,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560481868543</updated>
-      <workItem from="1560481871484" duration="24135000" />
+      <workItem from="1560481871484" duration="34400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24135000" />
+    <option name="totallyTimeSpent" value="34400000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="990" extended-state="6" />
@@ -240,34 +266,48 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" sideWeight="0.5011136" side_tool="true" weight="0.1682641" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916804" visible="true" weight="0.1682641" />
-      <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" visible="true" weight="0.1682641" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.1682641" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.5011136" side_tool="true" visible="true" weight="0.1682641" />
       <window_info anchor="bottom" id="Messages" weight="0.32962137" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32962137" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33073497" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33073497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997773" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="right" id="Palette" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Maven" weight="0.32960597" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Database" weight="0.32960597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24973376" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/DataStructure.iml">
@@ -304,17 +344,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-链表/src/com/onealon/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
@@ -326,25 +355,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/00-leetcode/src/数组/_1_两数之和.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/beans/property/DoubleProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="231" column="27" lean-forward="true" selection-start-line="231" selection-start-column="27" selection-end-line="231" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-链表/src/com/onealon/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state relative-caret-position="371">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02-动态数组/src/com/onealon/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="195" column="31" lean-forward="true" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="31" />
-          <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-          </folding>
+          <caret line="196" column="31" lean-forward="true" selection-start-line="196" selection-start-column="31" selection-end-line="196" selection-end-column="31" />
         </state>
       </provider>
     </entry>
