@@ -1,7 +1,9 @@
-package com.onealon;
+package com.onealon.LinkList;
+
+import com.onealon.AbstractList;
 
 /**
- * 链表
+ * 单向链表
  * @param <E>
  */
 public class LinkList<E> extends AbstractList<E> {

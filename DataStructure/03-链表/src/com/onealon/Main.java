@@ -1,5 +1,8 @@
 package com.onealon;
 
+import com.onealon.DoubleLinkList.DoubleLinkList;
+import com.onealon.LinkList.LinkList;
+
 public class Main {
 
     /**
@@ -7,9 +10,15 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        System.out.println("链表");
-        List<Integer> list = new LinkList<>();
-        testList(list);
+        // 单向链表
+//        System.out.println("单向链表");
+//        List<Integer> list = new LinkList<>();
+//        testList(list);
+
+        // 双向链表
+        System.out.println("双向链表");
+        List<Integer> doubleList = new DoubleLinkList<>();
+        testList(doubleList);
     }
 
     static void testList(List<Integer> list) {
