@@ -7,12 +7,14 @@ import java.util.Queue;
 
 /**
  * 二叉排序树
+ * 0. 概念
  * 1. 二叉排序树的打印 MJ提供的工具
  * 2. 二叉树遍历, 前中后层序遍历
  *    前序: 跟左右
  *    中序: 左跟右
  *    后续: 左右跟
  *    层序: 从上到下 从左到右
+ * 3. 二叉树的应用
  */
 public class BinarySearchTree<E> implements BinaryTreeInfo {
 
@@ -186,6 +188,16 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         public Node(E element, Node<E> parent) {
             this.element = element;
             this.parent = parent;
+        }
+
+        // 是否是叶子节点
+        public boolean isLeaf() {
+            return this.left != null && this.right != null;
+        }
+
+        // 是否有两个节点
+        public boolean hasTwoChildren() {
+            return this.left != null && this.right != null;
         }
     }
 

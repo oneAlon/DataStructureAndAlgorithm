@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("二叉树");
         BinarySearchTree tree = new BinarySearchTree();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 8; i++) {
             tree.add(((int)(Math.random() * 100)));
         }
         BinaryTrees.println(tree);
@@ -20,7 +20,7 @@ public class Main {
         tree.levelOrderTraversal(new BinarySearchTree.Visitor() {
             @Override
             public void visit(Object element) {
-
+                System.out.println(element + "-");
             }
         });
     }
