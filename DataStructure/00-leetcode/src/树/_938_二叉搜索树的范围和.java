@@ -7,11 +7,36 @@ package 树;
  * 二叉搜索树保证具有唯一的值。
  */
 public class _938_二叉搜索树的范围和 {
-    public static int rangeSumBST(TreeNode root, int L, int R) {
-        return 0;
+    int result = 0;
+    public int rangeSumBST(TreeNode root, int L, int R) {
+        if (root == null) return 0;
+        if (root.val >= L && root.val <= R) {
+            result += root.val;
+        }
+        if (root.val < L) {
+            rangeSumBST(root.right, L, R);
+        }
+        if (root.val > R) {
+            rangeSumBST(root.left, L, R);
+        }
+        return result;
     }
 
-    public static void main(String[] args) {
+    //         int result = 0;
+//         Stack s = new Stack();
+//         TreeNode node = root;
+//         // 中序遍历
+//         while (node != null || !s.isEmpty()) {
+//             if (node != null) {
+//                 s.push(node);
+//                 node = node.left;
+//             } else {
+//                 node = (TreeNode) s.pop();
+//                 int value = node.val;
+//                 if (value >= L && value <= R) result += value;
+//                 node = node.right;
+//             }
+//         }
 
-    }
+//         return result;
 }

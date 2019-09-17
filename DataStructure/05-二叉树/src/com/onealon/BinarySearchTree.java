@@ -4,6 +4,7 @@ import com.onealon.printer.BinaryTreeInfo;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * 二叉排序树
@@ -91,6 +92,40 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     /**
+     * 前序遍历
+     */
+    public void preorderTraversal() {
+        preorderTraversal(root);
+    }
+
+    private void preorderTraversal(Node<E> node) {
+        if (node == null) return;
+        System.out.print(node.element);
+        System.out.print(" ");
+        preorderTraversal(node.left);
+        preorderTraversal(node.right);
+    }
+
+    /**
+     * 前序遍历非递归
+     */
+    public void preorderNoTraversal() {
+        Stack s = new Stack();
+        Node node = root;
+        while (node != null || !s.isEmpty()) {
+            if (node != null) {
+                s.push(node);
+                System.out.print(node.element);
+                System.out.print(" ");
+                node = node.left;
+            } else {
+                node = (Node)s.pop();
+                node = node.right;
+            }
+        }
+    }
+
+    /**
      * 中序遍历: 左跟右, 二叉搜索树的中序遍历结果
      */
     public void inoderTraversal() {
@@ -106,9 +141,28 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     }
 
     /**
+     * 中序遍历 非递归
+     */
+    public void inorderNoTraversal() {
+        Stack s = new Stack();
+        Node node = root;
+        while (node != null || !s.isEmpty()) {
+            if (node != null) {
+                s.push(node);
+                node = node.left;
+            } else {
+                node = (Node)s.pop();
+                System.out.print(node.element);
+                System.out.print(" ");
+                node = node.right;
+            }
+        }
+    }
+
+    /**
      * 层序遍历: 一层一层, 使用队列
      */
-    private void levelOrderTraversal() {
+    public void levelOrderTraversal() {
         levelOrderTraversal(root);
     }
 
@@ -119,7 +173,8 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
 
         while (node != null) {
             // 先访问node
-            System.out.println(node.element);
+            System.out.print(node.element);
+            System.out.print(" ");
             if (node.left != null) {
                 queue.offer(node.left);
             }
@@ -130,23 +185,23 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
         }
     }
 
-    public void levelOrderTraversal(Visitor<E> visitor) {
-        if (root == null || visitor == null) return;
-        // 使用队列
-        Queue<Node<E>> queue = new LinkedList<>();
-        Node<E> node = root;
-        while (node != null) {
-            // 先访问node
-            visitor.visit(node.element);
-            if (node.left != null) {
-                queue.offer(node.left);
-            }
-            if (node.right != null) {
-                queue.offer(node.right);
-            }
-            node = queue.poll();
-        }
-    }
+//    public void levelOrderTraversal(Visitor<E> visitor) {
+//        if (root == null || visitor == null) return;
+//        // 使用队列
+//        Queue<Node<E>> queue = new LinkedList<>();
+//        Node<E> node = root;
+//        while (node != null) {
+//            // 先访问node
+//            visitor.visit(node.element);
+//            if (node.left != null) {
+//                queue.offer(node.left);
+//            }
+//            if (node.right != null) {
+//                queue.offer(node.right);
+//            }
+//            node = queue.poll();
+//        }
+//    }
 
     /**
      * 删除元素
@@ -177,6 +232,17 @@ public class BinarySearchTree<E> implements BinaryTreeInfo {
     public Object string(Object node) {
         Node<E> myNode = (Node<E>)node;
         return  myNode.element + "";
+    }
+
+    public int treeHeight() {
+        return treeHeight(root);
+    }
+
+    private int treeHeight(Node node) {
+        if (node == null) return 0;
+        int leftHeight = treeHeight(node.left);
+        int rightHeight = treeHeight(node.left);
+        return Math.max(leftHeight, rightHeight) + 1;
     }
 
     private static class Node<E> {
